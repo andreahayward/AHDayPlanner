@@ -16,7 +16,7 @@ textarea{
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: black;
+  color: #9d47ee;
   border-radius: 0;
   border-bottom: 10px solid black;
 }
@@ -61,7 +61,7 @@ textarea{
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  background-color: #9d47ee;
   color: white;
 }
 
