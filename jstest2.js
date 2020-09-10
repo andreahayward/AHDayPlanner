@@ -176,7 +176,7 @@ function testTime() {
         $(".form5").addClass("present");
     };
     // time10 6pm
-    //time9 = moment().startOf('day').add(18, "hours");
+    //time10 = moment().startOf('day').add(18, "hours");
     // Add time10 if/else
     //if (currentTime.isAfter(time10)) {
         //$(".form6").addClass("past");
