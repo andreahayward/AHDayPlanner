@@ -2,8 +2,8 @@
 $("#currentDay").text(moment().format('dddd MMMM Do YYYY, h:mm a'));
 var currentTime = moment();
 currentTime = currentTime.startOf("hour");
-var beforeTime = moment().startOf('day').add(9, "hours");
-var beforeTime = moment().startOf('day').add(9, "hours");
+var beforeTime = moment().startOf('day').add(10, "hours");
+var beforeTime = moment().startOf('day').add(10, "hours");
 
 //9am
 var time1 = beforeTime.add(0, "h");
@@ -176,17 +176,29 @@ function testTime() {
         $(".form5").addClass("present");
     };
     // time10 6pm
-    //time10 = moment().startOf('day').add(18, "hours");
+    time10 = moment().startOf('day').add(18, "hours");
     // Add time10 if/else
-    //if (currentTime.isAfter(time10)) {
-        //$(".form6").addClass("past");
-    //}
-    //else if (currentTime.isBefore(time10)) {
-        //$(".form10").addClass("future");
-    //}
-    //else if (currentTime.isSame(time10)) {
-        //$(".form10").addClass("present");
-    //};
+    if (currentTime.isAfter(time10)) {
+        $(".form6").addClass("past");
+    }
+    else if (currentTime.isBefore(time10)) {
+        $(".form6").addClass("future");
+    }
+    else if (currentTime.isSame(time10)) {
+        $(".form6").addClass("present");
+    };
+    // time11 7pm
+    time11 = moment().startOf('day').add(19, "hours");
+    // Add time11 if/else
+    if (currentTime.isAfter(time11)) {
+        $(".form7").addClass("past");
+    }
+    else if (currentTime.isBefore(time11)) {
+        $(".form7").addClass("future");
+    }
+    else if (currentTime.isSame(time11)) {
+        $(".form7").addClass("present");
+    };
 }
 testTime();
 // Loops through input area to get item from local storage
